@@ -1,0 +1,31 @@
+/* Título na página acima do cabeçalho */
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sandra {
+    border-radius: 4%;
+    width: 400px;
+}
+.sandra {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.descriçao {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 20px;
+}
+.como-começou {
+ font-family: 'Poppins', sans-serif;
+    font-weight: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
