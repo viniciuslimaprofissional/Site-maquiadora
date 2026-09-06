@@ -1,31 +1,472 @@
-/* Título na página acima do cabeçalho */
-.titulo {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*{
+    transition: 0.2s linear;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 
+
+/*fonte externa adicionada*/
+@font-face {
+    font-family: 'Bremlin';
+    src: url(../fonts/Bremlin.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonimerSerif';
+    src: url(../fonts/MonimerSerif_PERSONAL_USE_ONLY.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*fundo do site*/
+body {
+    background-color: #d49e6f;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 25px;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1a130d;
+    transition: 0.4s linear;
+}
+/* Esta classe é adicionada pelo JavaScript ao rolar para baixo.
+   Ela move o cabeçalho para fora da área visível, mantendo-o fixo na página. */
+.header.header-escondido {
+    transform: translateY(-100%);
+}
+.logo h1 {
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-bottom: 0px;
+}
+.logo p {
+    margin-top: -10px;
+    margin-left: -15px;
+}
+
+/* Título na página acima do cabeçalho */
+.titulo {
+    font-family: 'Bremlin', sans-serif;
+    font-size: 45px;
+    text-align: left;
+    color:#51351e;
+    margin-bottom: -10px;
+}
+.subtitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-top: 5px;
+    color: #835c3d;
+}
+/*menu de navegação*/
+html {
+    /*faz a pagina rolar suave ao clicar no link interno*/
+    scroll-behavior: smooth;
+}
+
+.nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-align: right;
+    color:black;
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.navegar {
+    text-decoration: none;
+    color: #51351e;
+}
+.navegar:hover {
+    color: #845b34;
+    font-size: 24px;
+    border-bottom: #845b34;
+}
+
+/*imagem e descrição de sandra*/
 .sandra {
     border-radius: 4%;
     width: 400px;
+    background-color: #69482c;
+    flex: 0 0 300px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 18px #1a130d;
 }
-.sandra {
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px 4%;
+    background-color: #51351e;
+    border-radius: 3%;
+}
+.container-texto {
+    flex: 1;
+}
+.container-texto p {
+    margin-right: 420px;
+    color: #d49e6f;
+}
+.sobre-mim {
+    font-family: 'Bremlin', sans-serif;
+    font-size: 50px;
+    color: #251202;
+    margin-bottom: 0px;
+    margin-top: 150px;
+    border-bottom: 0.1rem solid #9a6e47;
+    margin-right: 420px;
 }
 .descriçao {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-size: 20px;
     text-align: justify;
-    margin-left: 20px;
+    text-indent: 25px;
+    line-height: 1.5;
+    margin-top: 8px;
 }
-.como-começou {
- font-family: 'Poppins', sans-serif;
-    font-weight: ;
+/*até aqui*/
+
+/*historia*/
+.historia {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.historia h2 {
+    font-family: 'Bremlin', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #9a6e47;
+    color: #51351e;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 18px #1a130d;
+}
+
+.cards-historia {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #9a6e47;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px #1a130d;
+    text-align: left;
+}
+.card h3 {
+    text-align: center;
+    border-bottom: 0.1rem solid #1a130d;
+    margin-bottom: 8px;
+}
+.ano {
+    font-family: Bremlin, sans-serif; 
+}
+#primeiro-passo {
+    font-size: 40px;
+    text-align: center;
+}
+.card p {
+    color: #1a130d;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.container-começo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.historia {
+    font-family: MonimerSerif, sans-serif;
+    font-size: 45px;
+    color: #251202;
+}
+.historia2{
+    font-family: MonimerSerif, sans-serif;
+    font-size: 45px;
+    color: #251202;
+    text-align: center;
+}
+.historia3 {
+    font-family: MonimerSerif, sans-serif;
+    font-size: 45px;
+    color: #251202;
+}
+
+
+/*portifólio*/
+.meu-portifólio {
+    font-family: 'MonimerSerif', sans-serif;
+    font-size: 30px;
+    margin-bottom: -17px;
+    color: #ae7d5381;
+    margin-left: 15px;
+    font-weight: normal;
+}
+.meu-trabalho {
+    font-family: 'Bremlin', sans-serif;
+    font-size: 40px;
+    color: #d49e6fbc;
+    margin-top: 10px;
+    margin-bottom: -25px;
+    margin-left: 15px;
+}
+.fotos-portifolio {
+    border-radius: 4%;
+    margin-bottom: 15px;
+}
+.container-portifolio {
+    background-color: #705035;
+}
+
+/* Galeria do portfólio: mantém todas as fotos em uma faixa horizontal elegante. */
+.carrossel-portifolio {
+    position: relative;
+    max-width: 1280px;
+    margin: 25px auto;
+    padding: 0 55px;
+}
+
+/* Área rolável: permite deslizar pelas fotos usando mouse, toque ou a barra lateral. */
+.janela-carrossel {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #d49e6f #51351e;
+    padding: 12px 0 18px;
+}
+
+/* Personaliza a barra de rolagem em navegadores como Chrome e Edge. */
+.janela-carrossel::-webkit-scrollbar {
+    height: 9px;
+}
+.janela-carrossel::-webkit-scrollbar-track {
+    background-color: #51351e;
+    border-radius: 20px;
+}
+.janela-carrossel::-webkit-scrollbar-thumb {
+    background-color: #d49e6f;
+    border-radius: 20px;
+}
+
+/* Organiza todas as fotos lado a lado e cria espaçamento entre elas. */
+.faixa-carrossel {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+/* Cada foto vira um cartão: várias aparecem na tela e as demais ficam acessíveis pela rolagem. */
+.carrossel-portifolio .fotos-portifolio {
+    flex: 0 0 clamp(230px, 28vw, 360px);
+    width: clamp(230px, 28vw, 360px);
+    height: 470px;
+    margin-bottom: 0;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(224, 158, 26, 0.45);
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+/* Destaca discretamente a foto que receber o cursor do mouse. */
+.carrossel-portifolio .fotos-portifolio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 24px rgba(26, 19, 13, 0.6);
+}
+
+/* Botões nas laterais para avançar ou voltar na rolagem horizontal. */
+.botao-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 16px;
+    background-color: #1a130d6e;
+    color: #d49e6f;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.botao-carrossel:hover {
+    font-size: 30px;
+    background-color: #241a1192;
+    color: rgb(123, 89, 60);
+}
+
+/* Posiciona cada botão em um lado do carrossel. */
+.anterior { left: 0; }
+.proximo { right: 0; }
+
+/* Em telas pequenas, diminui as margens para aproveitar melhor o espaço disponível. */
+@media (max-width: 600px) {
+    .carrossel-portifolio {
+        padding: 0 40px;
+    }
+
+    .carrossel-portifolio .fotos-portifolio {
+        height: 380px;
+    }
+}
+.section-portifolio {
+    background-color: #36231447;
+    border-radius: 2%;
+    margin-left: 0;
+    padding-top: 15px;
+}
+
+/*Título de agendamentos*/
+.agendamentos {
+    font-family: 'Bremlin', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #51351e;
+}
+
+/*botão de agendamento*/
+.botao-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9a6e47;
+    color: #d49e6f;
+    text-decoration: none;
+    border-radius: 18px;
+    font-weight: bold;
+    font-family: 'MonimerSerif', sans-serif;
+    font-size: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 18px #1a130d;
+  }
+ /*efeito quando o mouse passa por cima do botão*/ 
+  .botao-link:hover {
+    background-color: #705035;
+    font-size: 35px;
+}
+
+/*centraliza o botão na tela*/
+.container-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*footer do site*/
+.site-footer {
+  background-color: #51351e; /* Cor ajustada para combinar com o tom da sua imagem */
+  color: #d49e6f;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.footer-column h4 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #d49e6f;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-column a:hover {
+  opacity: 0.7;
+}
+
+/* Linha Divisória */
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+}
+
+/* Seção das Redes Sociais e Créditos */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.social-icons img, .social-icons i {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }

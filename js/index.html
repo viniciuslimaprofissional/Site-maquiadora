@@ -1,84 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandra Beauty | Maquiagem e Penteados</title>
-<link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Sandra Inácia Beauty - Profissional da beleza com mais de 10 anos de experiência.
+     Oferece serviços de maquiagem e penteados para noivas e eventos especiais.">
+    <meta name="keywords" content="maquiagem, penteados, noivas, beleza, Sandra Inácia Beauty">
+    <meta name="author" content="Vinicius Henrique dos Santos Lima">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header class="header">
-     <h1 class="titulo">Sandra Inácia Beauty</h1>        
-    <nav>
-        <a href="#">Sobre mim</a> 
-        <a href="#">Como começou</a>
-        <a href="#">Meu Portfólio</a>
-    </nav>
+        <div class="logo">
+            <h1 class="titulo">Sandra Inácia Beauty</h1>
+            <p class="subtitulo">Maquiagem e Penteados</p>
+        </div>
+        <nav class="nav">
+            <a href="#Home" class="navegar">Home |</a>
+            <a href="#começo" class="navegar">Como começou |</a>
+            <a href="#portifolio" class="navegar">Portfólio |</a>
+           <!-- <a href="#serviços" class="navegar">Serviços |</a>-->
+            <a href="#agendamento" class="navegar">Agendamentos</a>
+        </nav>
     </header>
-<hr>
-<main class="main">
-    <div class="container">
-        <img src="../image/moça maquiada 1.jpg" class="sandra" width="200" alt="Sandra Inácia" title="Sandra Inácia">
-        <h2 class="sobre-mim">Sobre Mim:</h2>
-        <p class="descriçao">Sou Sandra Inácia, profissional da beleza com mais de 10 anos de experiência. Minha paixão é transformar as mulheres em momentos especiais, ajudando-as a se sentirem bonitas, confiantes e únicas. Com uma abordagem personalizada e criativa, ofereço serviços de maquiagem e penteados que destacam a beleza natural de cada cliente.</p>
+
+    <main class="main">
+        <div class="container">
+            <img src="../image/sandra inacia.jpg" class="sandra" width="200" alt="Sandra Inácia" title="Sandra Inácia">
+            <div class="container-texto">
+
+                <h2 class="sobre-mim" id="Home">Sobre Mim:</h2>
+
+                <p class="descriçao">Olá a todos, eu me chamo Sandra Inácia, profissional
+                    da beleza com mais de 10 anos de experiência, apaixonada
+                    por realçar a beleza e a autoestima de cada mulher.
+                    Ao longo da minha trajetória, desenvolvi um olhar atento aos
+                    detalhes e uma abordagem personalizada, buscando entender o
+                    estilo e a personalidade de cada cliente.
+                    Ofereço serviços
+                    de maquiagem e penteados para diferentes ocasiões,
+                    unindo técnica, criatividade, elegância e cuidado em cada
+                    produção. Meu objetivo é proporcionar uma experiência
+                    de qualidade, valorizando a beleza natural de cada mulher
+                    e fazendo com que ela se sinta ainda mais bonita, confiante
+                    e única.
+                </p>
+            </div>
+        </div>
+
+        <section class="historia">
+            <h2 id="começo">Como tudo começou:</h2>
+
+            <div class="cards-historia">
+                <div class="card">
+                    <h3>Início</h3>
+                   <p>Enquanto trabalhava em um escritório de advocacia, as colegas sempre pediam para que eu fizesse tranças em seus cabelos.
+                     O que começou como um simples gesto acabou despertando minha paixão pela beleza e dando início a uma nova história.</p>
+                </div>
+
+                <div class="card">
+                    <h3 id="primeiro-passo">Primeiro passo</h3>
+                    <p>Incentivada pelas colegas, comecei a criar novos modelos e compartilhar meu trabalho nas redes sociais.
+                    Até que uma amiga me convidou para arrumá-la para seu casamento. 
+                    A experiência despertou ainda mais meu interesse e me motivou a buscar conhecimento profissional.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Realização</h3>
+                    <p>Fiz cursos de Maquiagem e Penteados no SENAC e, no ano de <id class="ano">2018</id>, abri meu estúdio em casa. 
+                        Desde então, continuo me especializando e aprimorando minhas técnicas. 
+                        Hoje, tenho gratidão por cada cliente e amo ajudar mulheres a se sentirem bonitas, confiantes e especiais.</p>
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <div class="container-portifolio">
+            <section class="section-portifolio">
+
+                <h3 class="meu-portifólio" id="portifolio">Portifólio</h3>
+                <h2 class="meu-trabalho">MEU TRABALHO</h2>
+            </section>
+            <!-- Carrossel: os botões movem a faixa de fotos para a esquerda ou direita. -->
+            <section class="carrossel-portifolio" aria-label="Galeria de trabalhos">
+                <!-- Janela que mostra apenas uma foto por vez. -->
+                <div class="janela-carrossel">
+                    <!-- Faixa que será deslocada pelo JavaScript. -->
+                    <div class="faixa-carrossel">
+                        <img src="../image/moça maquiada 1.jpg" width="500" alt="moça maquiada 1"
+                            class="fotos-portifolio">
+                        <img src="../image/moça maquiada 2.jpg" width="500" height="625" alt="moça maquiada 2"
+                            class="fotos-portifolio">
+                        <img src="../image/moça maquiada 3.jpg" width="500" height="625" alt="moça maquiada 3"
+                            class="fotos-portifolio">
+                        <img src="../image/moça maquiada 4.jpg" width="500" height="625" alt="moça maquiada 4"
+                            class="fotos-portifolio">
+                    </div>
+                </div>
+                <!-- Controles para navegar manualmente entre as fotos. -->
+                <button class="botao-carrossel anterior" type="button" aria-label="Foto anterior">&#10094;</button>
+                <button class="botao-carrossel proximo" type="button" aria-label="Próxima foto">&#10095;</button>
+            </section>
+        </div>
+
+       <!--
+        <h2 class="serviços" id="serviços">Meus Serviços:</h2>
+        <h2>Noiva</h2>
+        <img src="../image/moça maquiada 3.jpg" width="200" alt="noiva" title="noiva">
+        <ul>
+            <li>Dia inteiro de maquiagem</li>
+            <li>Dia inteiro de maquiagem</li>
+            <li>Dia inteiro de maquiagem</li>
+        </ul>
+        <p>Valor: R$160,00</p>
+        <h2>Noiva</h2>
+        <img src="../image/moça maquiada 3.jpg" width="200" alt="noiva" title="noiva">
+        <ul>
+            <li>Dia inteiro de maquiagem</li>
+            <li>Dia inteiro de maquiagem</li>
+            <li>Dia inteiro de maquiagem</li>
+        </ul>
+
+        <p>Valor: R$160,00</p>
+
+        <h2>Noiva</h2>
+        <img src="../image/moça maquiada 3.jpg" width="200" alt="noiva" title="noiva">
+        <ul>
+            <li>Dia inteiro de maquiagem</li>
+            <li>Dia inteiro de maquiagem</li>
+            <li>Dia inteiro de maquiagem</li>
+        </ul>
+        <p>Valor: R$160,00</p>
+        -->
+        
+        <h2 class="agendamentos" id="agendamento">AGENDAMENTOS:</h2>
+        <div class="container-botao">
+            <a href="index2.html" class="botao-link">Faça seu agendamento</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Sandra Inácia Beauty</h3>
+        <p>Realçando sua beleza natural com serviços exclusivos e atendimento personalizado.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Navegação</h4>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+          <li><a href="#começo">Sobre Mim</a></li>
+          <li><a href="#portifolio">Portifólio</a></li>
+          <li><a href="#agendamento">Agendamentos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contato</h4>
+        <p>Telefone: (81) 98732-5605</p>
+        <p>Atendimento com hora marcada</p>
+      </div>
     </div>
-    <hr>
-    <h2 class="como-começou">Como tudo começou:</h2>
-    <h3 class="historia">Início</h3>
-    <ul>
-        <li>começei fazendo tranças no trabaho</li>     
-    </ul>
-    <h3 class="historia2">Início</h3>
-    <ul>
-        <li>começei fazendo tranças no trabaho</li>     
-    </ul>
-    <h3 class="historia3">Início</h3>
-    <ul>
-        <li>começei fazendo tranças no trabaho</li>     
-    </ul>
-    <hr>
-    
-    <h3 class="meu-portifólio">Meu Portifólio:</h3>
-    <h2 class="meu-trabalho">MEU TRABALHO:</h2>
-    <section>
-        <img src="../image/moça maquiada 1.jpg" width="300" alt="moça maquiada 1"> 
-        <img src="../image/moça maquiada 2.jpg" width="300" height="375" alt="moça maquiada 2"> 
-        <img src="../image/moça maquiada 3.jpg" width="300" height="375" alt="moça maquiada 3">
-        <img src="../image/moça maquiada 4.jpg" width="320" height="375" alt="moça maquiada 4">
-    </section>
-<h2>Meus Serviços:</h2>
-<h2>Noiva</h2>
-<img src="../image/moça maquiada 3.jpg" width="200" alt="noiva" title="noiva">
-<ul>
-    <li>Dia inteiro de maquiagem</li>
-    <li>Dia inteiro de maquiagem</li>
-    <li>Dia inteiro de maquiagem</li>
-</ul>
-<p>Valor: R$160,00</p>
-<h2>Noiva</h2>
-<img src="../image/moça maquiada 3.jpg" width="200" alt="noiva" title="noiva">
-<ul>
-    <li>Dia inteiro de maquiagem</li>
-    <li>Dia inteiro de maquiagem</li>
-    <li>Dia inteiro de maquiagem</li>
-</ul>
 
-<p>Valor: R$160,00</p>
+    <hr class="footer-divider" />
 
-<h2>Noiva</h2>
-<img src="../image/moça maquiada 3.jpg" width="200" alt="noiva" title="noiva">
-<ul>
-    <li>Dia inteiro de maquiagem</li>
-    <li>Dia inteiro de maquiagem</li>
-    <li>Dia inteiro de maquiagem</li>
-</ul>
-<p>Valor: R$160,00</p>
-</main>
-    <footer>
-        <h2>Sandra Inácia Beauty</h2>
-        <h3>@instagram</h3>
-        <h3>outro contato</h3>
-    </footer>
-<hr>
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/sandrainaciabeauty/" aria-label="Instagram"><img src="../image/Instagram-Icon-removebg-preview.png"><i class="fab fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5581987325605&text=Ol%c3%a1%20Sandra!%20Tudo%20bem?&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafaLNwxNlOzXWcBcBOnn6qC_d7qS5V4b4m1Aqo20wZ4eDjE94tVYiudlmgrIw_aem_CmfcQDIel8UaiBKPZMXMjA"
+         aria-label="WhatsApp"><img src="/image/whatsapp icon.png"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p class="copyright">&copy; 2026 Sandra Inácia Beauty. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Carrega o JavaScript que controla a exibição do cabeçalho durante a rolagem. -->
+    <script src="script.js"></script>
 </body>
+
 </html>
